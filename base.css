@@ -1,38 +1,64 @@
-html, body {
-    margin: 0;
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
 }
 body {
-    background-color: #f1f1f1;
-    display: flex;
-    justify-content: center;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
 }
 
 .wrapper {
-    width: 1200px;
-    display: flex;
-    margin: 0 auto;
-    background-color: aquamarine;
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  background-color: aquamarine;
 }
 .main {
-    display: flex;
-    flex-flow: column;
-    width: 85%;
+  display: flex;
+  flex-flow: column;
+  width: 85%;
 }
 .menu {
-    width: 15%;
-    background-color: aqua;
-    padding: 10px 20px 0px;
+  width: 15%;
+  background-color: aqua;
+  padding: 10px 20px 0px;
 }
 .header {
-    background-color: rgb(5, 108, 108);
-    min-height: 150px;
+  display: flex;
+  align-items: center;
+  background-color: indigo;
+  min-height: 150px;
 }
+
+.header > h1 {
+  flex: 1;
+  text-align: center;
+  color: white;
+}
+
 .content {
-    background-color: white;
-    min-height: 300px;
-    padding: 20px;
+  background-color: white;
+  min-height: 350px;
+  padding: 20px;
 }
+
+.content table > thead {
+  background-color: indigo;
+  color: white;
+}
+
+.content td {
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
 .footer {
-    background-color: rgb(99, 56, 240);
-    min-height: 150px;
+  background-color: indigo;
+  color: white;
+  min-height: 70px;
+  padding: 25px;
 }
